@@ -19,8 +19,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
        bash setup/android_build_env.sh
        sudo apt-get update
        sudo apt-get install repo
-       git config --global user.name "Harshit Tiwari
-       git config --global user.email "tech.harshit.tiwari@gmail.com"
+       git config --global user.name Harshit Tiwari
+       git config --global user.email tech.harshit.tiwari@gmail.com
        mkdir rom && cd rom
        mkdir ~/bin
        PATH=~/bin:$PATH
