@@ -5,7 +5,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     id_like=$(awk -F= '$1 == "ID_LIKE" {print $2}' /etc/os-release)
     if [[ "$distro" == "arch" || "$id_like" == "arch" ]]; then
        echo "Arch Linux Detected"
-       sudo pacman -S --needed unace unrar zip unzip p7zip sharutils uudeview arj cabextract file-roller dtc xz python-pip brotli lz4 gawk libmpack aria2
+       sudo pacman -S --needed unace unrar zip unzip p7zip sharutils uudeview arj locate  cabextract file-roller dtc xz python-pip brotli lz4 gawk libmpack aria2
        #aur=rar
     else
        sudo apt install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller device-tree-compiler liblzma-dev python-pip brotli liblz4-tool gawk aria2
